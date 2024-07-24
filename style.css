@@ -37,11 +37,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
 }
 
 h1 {
     color: #E5E5E5;
-    margin: 0 0 20px 0;
+    overflow: auto;
 }
 
 textarea {
@@ -53,6 +54,7 @@ textarea {
     padding: 10px;
     box-sizing: border-box;
     resize: none;
+    overflow:auto;
 }
 
 button {
