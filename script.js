@@ -7,7 +7,7 @@ function showError(message) {
     const errorMessage = document.getElementById('errorMessage');
     errorMessage.textContent = message;
 }
-
+// Función para encriptar el texto
 function encryptText() {
     const inputTextElement = document.getElementById('inputText');
     const inputText = inputTextElement.value;
@@ -28,7 +28,7 @@ function encryptText() {
 
     showError('');
 }
-
+// Función para desencriptar el texto
 function decryptText() {
     const inputTextElement = document.getElementById('inputText');
     const inputText = inputTextElement.value;
@@ -49,20 +49,19 @@ function decryptText() {
 
     showError('');
 }
-
+// Función para copiar el texto al portapapeles
 function copyText() {
     const outputTextElement = document.getElementById('outputText');
     outputTextElement.select();
     document.execCommand('copy');
 
-    // Limpiar los campos de texto
     document.getElementById('inputText').value = '';
     document.getElementById('outputText').value = '';
 
     // Mostrar mensaje de copiado
     showCopyMessage();
 }
-
+// Función para mostrar el mensaje de copiado
 function showCopyMessage() {
     const copyMessage = document.getElementById('copyMessage');
     copyMessage.classList.add('show');
@@ -70,9 +69,33 @@ function showCopyMessage() {
         copyMessage.classList.remove('show');
     }, 2000);
 }
-      /*identificar dispositivo de 
-salida y dejar mensaje identificando 
-dispositivo*/
+  // Función para detectar el gesto de "tirar hacia abajo" para refrescar la página
+document.addEventListener('DOMContentLoaded', function() {
+    let refreshThreshold = 50; 
+    let startY = 0;
+    let isPullingDown = false; 
+
+    // Detectar el inicio del gesto de arrastre
+    window.addEventListener('touchstart', function(event) {
+        if (event.touches.length === 1) {
+            startY = event.touches[0].pageY;
+            isPullingDown = window.scrollY === 0;
+        }
+    });
+
+    
+    // Detectar el movimiento del gesto de arrastre
+    window.addEventListener('touchmove', function(event) {
+        if (isPullingDown) {
+            let currentY = event.touches[0].pageY;
+            if (currentY - startY > refreshThreshold) {
+                location.reload();
+            }
+        }
+    });
+});
+
+        // Función para detectar el tipo de dispositivo
 
 function detectDevice() {
     const deviceMessage = document.getElementById('deviceMessage');
