@@ -33,7 +33,7 @@ body {
     box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
     text-align: center;
     max-width: 600px;
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,8 +45,8 @@ h1 {
 }
 
 textarea {
-    width: 90%;
-    height: 90px;
+    width: 80%;
+    height: 80px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
