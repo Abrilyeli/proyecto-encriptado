@@ -23,7 +23,7 @@ function encryptText() {
         .replace(/u/g, 'ufat');
     document.getElementById('outputText').value = encryptedText;
 
-    // Borrar el texto del primer input
+    // Borrar el texto del  input
     inputTextElement.value = '';
 
     showError('');
@@ -44,7 +44,7 @@ function decryptText() {
         .replace(/ufat/g, 'u');
     document.getElementById('outputText').value = decryptedText;
 
-    // Borrar el texto del primer input
+    // Borrar el texto del  input
     inputTextElement.value = '';
 
     showError('');
