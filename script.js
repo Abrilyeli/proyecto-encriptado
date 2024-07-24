@@ -79,7 +79,7 @@ function detectDevice() {
     } else if (width <= 1024) {
         deviceMessage.textContent = 'Estás usando una tablet.';
     } else {
-        deviceMessage.textContent = 'Estás usando una laptop o computadora de escritorio.';
+        deviceMessage.textContent = 'Estás usando una computadora .';
     }
 }
 
