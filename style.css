@@ -9,7 +9,7 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
     color: #333;
 }
 
@@ -42,12 +42,12 @@ body {
 
 h1 {
     color: #E5E5E5;
-    overflow: auto;
+    
 }
 
 textarea {
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    height: 100px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
