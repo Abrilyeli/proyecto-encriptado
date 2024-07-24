@@ -42,7 +42,8 @@ body {
 
 h1 {
     color: #E5E5E5;
-    
+    margin: 0 0 20px 0;
+     overflow: auto;
 }
 
 textarea {
