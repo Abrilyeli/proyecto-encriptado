@@ -70,7 +70,9 @@ function showCopyMessage() {
         copyMessage.classList.remove('show');
     }, 2000);
 }
-      /*identificar dispositivo de salida y dejar mensaje identificando */
+      /*identificar dispositivo de 
+salida y dejar mensaje identificando 
+dispositivo*/
 
 function detectDevice() {
     const deviceMessage = document.getElementById('deviceMessage');
