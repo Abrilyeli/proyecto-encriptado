@@ -11,18 +11,17 @@ body {
     margin: 0;
     overflow: hidden;
     color: #333;
-  
 }
-    
+
 .logo {
     position: fixed;
     width: 65px;
     height: auto;
     top: 10px;
     left: 10px;
-    transition: transform 0.2s
-    ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
+
 .logo:active { 
     transform: scale(1.5);
 }
@@ -31,23 +30,18 @@ body {
     background-color: #1D3557;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(128,128,128);
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
     text-align: center;
     max-width: 600px;
     width: 90%;
-    display: inline;
+    display: flex;
     flex-direction: column;
-   align-items: center;
-  
-  
+    align-items: center;
 }
-h1 {
-   color: #E5E5E5;
-    margin: 0 0 20px 0;
-   display: flex;
-    flex-direction: column;
 
-   
+h1 {
+    color: #E5E5E5;
+    margin: 0 0 20px 0;
 }
 
 textarea {
@@ -85,6 +79,7 @@ button:hover {
     font-weight: bold;
     color: #333;
 }
+
 .copy-message {
     display: none;
     position: fixed;
@@ -119,7 +114,6 @@ button:hover {
     animation: slideInOut 2s forwards;
 }
 
-
 /* Estilos específicos para diferentes dispositivos */
 @media only screen and (max-width: 600px) {
     .container {
@@ -141,6 +135,20 @@ button:hover {
 @media only screen and (min-width: 1025px) {
     .container {
         max-width: 60%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+
+    .container {
+        max-width: 70%;
+    }
+
+    textarea {
+        height: 120px;
     }
 }
 
