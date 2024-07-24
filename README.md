@@ -72,9 +72,6 @@ El sistema acepta la letra "ñ" y solo funciona con letras minúsculas sin acent
     <div class="copy-message" id="copy-message">Texto copiado</div>
     <footer class="footer">
         <p>Desarrollado por Jorge Echeverria, estudiante de programación</p>
-        <div class="social-icons">
-            <a href="https://twitter.com/jorge" target="_blank">Twitter</a>
-            <a href="https://linkedin.com/in/jorge" target="_blank">LinkedIn</a>
         </div>
     </footer>
     <script src="script.js"></script>
