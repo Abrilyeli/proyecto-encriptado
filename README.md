@@ -40,3 +40,13 @@ Se añadió un botón para copiar el texto resultante al portapapeles, utilizand
 Se añadieron parámetros para ajustar el diseño según el tamaño de la pantalla, mejorando la experiencia en dispositivos móviles, tabletas y laptops/PCs. Se añadió detección de dispositivo con JavaScript para mostrar un mensaje correspondiente según el tipo de dispositivo utilizado. Pie de Página Personalizado:
 
 Se añadió un pie de página con lo datos del programador Jorge Echeverría, con un estilo brillante.
+    
+       Actualización Versión Actual: 1.6 Fecha de Actualización: 24 de julio de 2024
+
+  Cambios Recientes en CSS:se realiza cambio de imagen de fondo Ajustes para mantener la posición de los elementos al cambiar la orientación de la página.
+Implementación de position: fixed; para el pie de página para que permanezca en su lugar al cambiar la orientación.
+Se agregó una animación para el mensaje de copiado, ahora el mensaje es más grande y de color blanco.
+Se asegura que los elementos como el título y los textos permanezcan visibles y correctamente posicionados.
+Cambios Recientes en JavaScript:Funcionalidad para borrar el texto de los campos de entrada al presionar los botones de encriptar o desencriptar.Eliminación de la alerta para el copiado del texto.
+Mejor manejo de la validación de entradas para asegurar que solo se acepten caracteres válidos.
+cambios HTML: se agrega etiqueta<a> al logo de alura para agregar enlace oficial y una animacion al presionar 
