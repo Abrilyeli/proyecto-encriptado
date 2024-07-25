@@ -89,14 +89,22 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isPullingDown) {
             let currentY = event.touches[0].pageY;
             if (currentY - startY > refreshThreshold) {
+                isPullingDown = false;
                 location.reload();
             }
         }
     });
+        // Resetear el estado al finalizar el gesto
+    window.addEventListener('touchend', function(event) {
+        isPullingDown = false;
+    });
 });
 
         // Función para detectar el tipo de dispositivo
-
+document.addEventListener("DOMContentLoaded", function() {
+    detectDeviceType();
+    window.addEventListener("resize", detectDeviceType);
+});
 function detectDevice() {
     const deviceMessage = document.getElementById('deviceMessage');
     const width = window.innerWidth;
