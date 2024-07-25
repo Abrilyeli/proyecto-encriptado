@@ -78,7 +78,7 @@ function showCopyMessage() {
         copyMessage.classList.remove('show');
     }, 2000);
 }
-
+// Función para detectar el tipo de dispositivo
 function detectDevice() {
     const deviceMessage = document.getElementById('deviceMessage');
     const width = window.innerWidth;
