@@ -74,11 +74,11 @@ function detectDevice() {
     const deviceMessage = document.getElementById('deviceMessage');
     const width = window.innerWidth;
     if (width <= 600) {
-        deviceMessage.textContent = 'Estás usando un dispositivo móvil.';
+        deviceMessage.textContent = "Estás usando un dispositivo móvil.";
     } else if (width <= 1024) {
-        deviceMessage.textContent = 'Estás usando una tablet.';
+        deviceMessage.textContent = "Estás usando una tablet.";
     } else {
-        deviceMessage.textContent = 'Estás usando una computadora .';
+        deviceMessage.textContent = "Estás usando una computadora.";
     }
 }
 
