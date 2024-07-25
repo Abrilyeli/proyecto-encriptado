@@ -42,38 +42,43 @@ El sistema acepta la letra "ñ" y solo funciona con letras minúsculas sin acent
 - Funcionalidad para borrar el texto de los campos de entrada al presionar los botones de encriptar o desencriptar.
 - Eliminación de la alerta para el copiado del texto.
 - Mejor manejo de la validación de entradas para asegurar que solo se acepten caracteres válidos.
-- Implementación de la funcionalidad `pull-to-refresh` para dispositivos móviles.
+
 
 ## Código Fuente
 
 ### HTML
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <img src="logo.png" alt="Logo" class="logo">
+   //logo más página alura
+      <a href="https://www.aluracursos.com/">
+         <img src="alura3.svg" alt="logo alura" class="logo">
+        </a>
+              
         <h1>Encriptador de Texto</h1>
-        <textarea id="input-text" placeholder="Ingrese el texto aquí..."></textarea>
-        <div class="buttons">
-            <button onclick="encrypt()">Encriptar</button>
-            <button onclick="decrypt()">Desencriptar</button>
-            <button onclick="copyText()">Copiar</button>
-        </div>
-        <textarea id="output-text" readonly placeholder="El texto encriptado aparecerá aquí..."></textarea>
-        <p id="device-type" class="device"></p>
+        <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+        <button onclick="encryptText()">Encriptar</button>
+        <button onclick="decryptText()">Desencriptar</button>
+        <textarea id="outputText" placeholder="El resultado aparecerá aquí..." readonly></textarea>
+        <button onclick="copyText()">Copiar</button>
+        <p id="errorMessage" class="error"></p>
+        <p id="deviceMessage" class="device"></p>
+        <div id="copyMessage" class="copy-message">¡Texto copiado!</div>
     </div>
-    <div class="copy-message" id="copy-message">Texto copiado</div>
+            //pie de pagina
     <footer class="footer">
-        <p>Desarrollado por Jorge Echeverria, estudiante de programación</p>
-        </div>
+        <p>desarrolado por Jorge echeverria estudiante alura LATAM.</p>
+          
+      
     </footer>
-    <script src="script.js"></script>
-</body>
+     <script src="script.js"></script>
+       </body>
 </html>
