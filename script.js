@@ -69,42 +69,7 @@ function showCopyMessage() {
         copyMessage.classList.remove('show');
     }, 2000);
 }
-  // Función para detectar el gesto de "tirar hacia abajo" para refrescar la página
-document.addEventListener('DOMContentLoaded', function() {
-    let refreshThreshold = 50; 
-    let startY = 0;
-    let isPullingDown = false; 
-
-    // Detectar el inicio del gesto de arrastre
-    window.addEventListener('touchstart', function(event) {
-        if (event.touches.length === 1) {
-            startY = event.touches[0].pageY;
-            isPullingDown = window.scrollY === 0;
-        }
-    });
-
-    
-    // Detectar el movimiento del gesto de arrastre
-    window.addEventListener('touchmove', function(event) {
-        if (isPullingDown) {
-            let currentY = event.touches[0].pageY;
-            if (currentY - startY > refreshThreshold) {
-                isPullingDown = false;
-                location.reload();
-            }
-        }
-    });
-        // Resetear el estado al finalizar el gesto
-    window.addEventListener('touchend', function(event) {
-        isPullingDown = false;
-    });
-});
-
-        // Función para detectar el tipo de dispositivo
-document.addEventListener("DOMContentLoaded", function() {
-    detectDeviceType();
-    window.addEventListener("resize", detectDeviceType);
-});
+     // Función para detectar el tipo de dispositivo
 function detectDevice() {
     const deviceMessage = document.getElementById('deviceMessage');
     const width = window.innerWidth;
