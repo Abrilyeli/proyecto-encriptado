@@ -7,15 +7,14 @@ function showError(message) {
     const errorMessage = document.getElementById('errorMessage');
     errorMessage.textContent = message;
 }
-// Función para encriptar el texto
+
 function encryptText() {
     const inputTextElement = document.getElementById('inputText');
     const inputText = inputTextElement.value;
     if (!validateInput(inputText)) {
-        showError("El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.");
+        showError('El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.');
         return;
     }
-         clearError();
     const encryptedText = inputText
         .replace(/e/g, 'enter')
         .replace(/i/g, 'imes')
@@ -24,17 +23,17 @@ function encryptText() {
         .replace(/u/g, 'ufat');
     document.getElementById('outputText').value = encryptedText;
 
-    // Borrar el texto del  input
+    // Borrar el texto del primer input
     inputTextElement.value = '';
 
     showError('');
 }
-// Función para desencriptar el texto
+
 function decryptText() {
     const inputTextElement = document.getElementById('inputText');
     const inputText = inputTextElement.value;
     if (!validateInput(inputText)) {
-        showError("El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.");
+        showError('El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.');
         return;
     }
     const decryptedText = inputText
@@ -45,24 +44,25 @@ function decryptText() {
         .replace(/ufat/g, 'u');
     document.getElementById('outputText').value = decryptedText;
 
-    // Borrar el texto del  input
+    // Borrar el texto del primer input
     inputTextElement.value = '';
 
     showError('');
 }
-// Función para copiar el texto al portapapeles
+
 function copyText() {
     const outputTextElement = document.getElementById('outputText');
     outputTextElement.select();
     document.execCommand('copy');
 
+    // Limpiar los campos de texto
     document.getElementById('inputText').value = '';
     document.getElementById('outputText').value = '';
 
     // Mostrar mensaje de copiado
     showCopyMessage();
 }
-// Función para mostrar el mensaje de copiado
+
 function showCopyMessage() {
     const copyMessage = document.getElementById('copyMessage');
     copyMessage.classList.add('show');
@@ -70,16 +70,16 @@ function showCopyMessage() {
         copyMessage.classList.remove('show');
     }, 2000);
 }
-     // Función para detectar el tipo de dispositivo
+
 function detectDevice() {
     const deviceMessage = document.getElementById('deviceMessage');
     const width = window.innerWidth;
     if (width <= 600) {
-        deviceMessage.textContent = "Estás usando un dispositivo móvil.";
+        deviceMessage.textContent = 'Estás usando un dispositivo móvil.';
     } else if (width <= 1024) {
-        deviceMessage.textContent = "Estás usando una tablet.";
+        deviceMessage.textContent = 'Estás usando una tablet.';
     } else {
-        deviceMessage.textContent = "Estás usando una computadora.";
+        deviceMessage.textContent = 'Estás usando una  computadora.';
     }
 }
 
