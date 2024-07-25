@@ -15,6 +15,7 @@ function encryptText() {
         showError("El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.");
         return;
     }
+         clearError();
     const encryptedText = inputText
         .replace(/e/g, 'enter')
         .replace(/i/g, 'imes')
