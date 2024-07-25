@@ -10,7 +10,11 @@ function showError(message) {
 
 function encryptText() {
     const inputTextElement = document.getElementById('inputText');
-    const inputText = inputTextElement.value;
+    const inputText = inputTextElement.value.trim();
+    if (inputText === "") {
+        showError('Por favor, ingrese un texto.');
+        return;
+    }
     if (!validateInput(inputText)) {
         showError('El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.');
         return;
@@ -31,7 +35,11 @@ function encryptText() {
 
 function decryptText() {
     const inputTextElement = document.getElementById('inputText');
-    const inputText = inputTextElement.value;
+    const inputText = inputTextElement.value.trim();
+    if (inputText === "") {
+        showError('Por favor, ingrese un texto.');
+        return;
+    }
     if (!validateInput(inputText)) {
         showError('El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.');
         return;
