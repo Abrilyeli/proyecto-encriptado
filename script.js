@@ -33,7 +33,7 @@ function decryptText() {
     const inputTextElement = document.getElementById('inputText');
     const inputText = inputTextElement.value;
     if (!validateInput(inputText)) {
-        showError("El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.");');
+        showError("El texto solo debe contener letras minúsculas y espacios. No se permiten números ni caracteres especiales.");
         return;
     }
     const decryptedText = inputText
