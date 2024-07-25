@@ -140,6 +140,12 @@ button:hover {
     }
 }
 
+.error-message {
+    color: red;
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center;
+    
 .footer {
     margin-top: 20px;
     background-color: #007BFF;
