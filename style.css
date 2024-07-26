@@ -13,7 +13,6 @@ body {
     color: #333;
 }
 
-
 /* Estilos del cargador */
 .loader {
     position: fixed;
@@ -28,20 +27,57 @@ body {
     z-index: 1000;
 }
 
-.loader::before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    border: 5px solid #007BFF;
-    border-top: 5px solid transparent;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+.loading {
+    position: relative;
+    width: 100px;
+    height: 100px;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.loading span {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #3a86ff;
+    animation: rotate 2s infinite;
 }
+
+.loading span:nth-child(1) {
+    border-radius: 50% 50% 0 50%;
+    background-color: #ffbe0b;
+    transform-origin: bottom right;
+    animation-delay: 0s;
+}
+
+.loading span:nth-child(2) {
+    border-radius: 50% 50% 50% 0;
+    background-color: #ff006e;
+    transform-origin: bottom left;
+    animation-delay: 0.5s;
+}
+
+.loading span:nth-child(3) {
+    border-radius: 50% 0 50% 50%;
+    background-color: #fb5607;
+    transform-origin: top right;
+    animation-delay: 1.5s;
+}
+
+.loading span:nth-child(4) {
+    border-radius: 0 50% 50% 50%;
+    background-color: #8338ec;
+    transform-origin: top left;
+    animation-delay: 1s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .container {
 
