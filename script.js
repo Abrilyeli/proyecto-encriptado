@@ -30,7 +30,7 @@ function validateInput(text) {
     if (message) {
         errorTimeout = setTimeout(() => {
             errorMessage.textContent = '';
-        }, 3000);
+        }, 2500);
     }
 }
 
