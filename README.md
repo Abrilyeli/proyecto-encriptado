@@ -34,7 +34,7 @@ El sistema acepta la letra "ñ" y solo funciona con letras minúsculas sin acent
 
 ### Cambios Recientes en CSS:
 - Ajustes para mantener la posición de los elementos al cambiar la orientación de la página.
-- Implementación de `position: fixed;` para el pie de página para que permanezca en su lugar al cambiar la orientación.
+- se agregó un mensaje de error para cuando no se ponga ningun texto en el cuadro
 - Se agregó una animación para el mensaje de copiado, ahora el mensaje es más grande y de letras de color blanco dentro de un rectangulo verde.
 - Se asegura que los elementos como el título y los textos permanezcan visibles y correctamente posicionados.
 
