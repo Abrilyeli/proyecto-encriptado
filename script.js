@@ -1,3 +1,4 @@
+// duración animación de inicio
 document.addEventListener("DOMContentLoaded", function() {
     const loader = document.getElementById('loader');
     const mainContent = document.getElementById('mainContent');
@@ -5,16 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         loader.style.display = 'none';
         mainContent.style.display = 'flex';
-    }, 2000); // Cambia el tiempo según sea necesario
+    }, 2000);
 });
 
       
-
-
-
-
-
-
 // Validar que el texto contenga solo letras minúsculas y espacios
 function validateInput(text) {
     const regex = /^[a-zñ0-9\s]+$/;
