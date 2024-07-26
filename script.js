@@ -1,5 +1,5 @@
 function validateInput(text) {
-    const regex = /^[a-zñ\s]+$/;
+    const regex = /^[a-zñ0-9\s]+$/;
     return regex.test(text);
 }
 
