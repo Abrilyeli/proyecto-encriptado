@@ -94,6 +94,10 @@ function decryptText() {
 // Copiar el texto encriptado/desencriptado al portapapeles
 function copyText() {
     const outputTextElement = document.getElementById('outputText');
+if (outputTextElement.value.trim() === "") {
+        showError('No hay texto para copiar.');
+        return;
+    }
     outputTextElement.select();
     document.execCommand('copy');
 
@@ -103,6 +107,7 @@ function copyText() {
 
     // Mostrar mensaje de copiado
     showCopyMessage();
+  ShowError ('');
 }
 
 // Mostrar mensaje de copiado
