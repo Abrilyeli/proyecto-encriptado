@@ -17,7 +17,7 @@ Ejemplo:
 - "gato" se convierte en "gaitober"
 - "gaitober" se convierte en "gato"
 
-El sistema acepta la letra "ñ" y solo funciona con letras minúsculas sin acentos ni caracteres especiales. Si se ingresan caracteres inválidos, se muestra un mensaje de error.
+El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúsculas sin acentos ni caracteres especiales. Si se ingresan caracteres inválidos, se muestra un mensaje de error.
 
 ## Características del Proyecto
 
