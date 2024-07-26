@@ -36,12 +36,16 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - se agregó un mensaje de error para cuando no se ponga ningun texto en el cuadro
 - Se agregó una animación para el mensaje de copiado, ahora el mensaje es más grande y de letras de color blanco dentro de un rectangulo verde.
 - Se asegura que los elementos como el título y los textos permanezcan visibles y correctamente posicionados.
+- se agrego una animacion de carna inical.
+- 
 
 ### Cambios Recientes en JavaScript:
 - Funcionalidad para borrar el texto de los campos de entrada al presionar los botones de encriptar o desencriptar.
 - Eliminación de la alerta para el copiado del texto.
 - Mejor manejo de la validación de entradas para asegurar que solo se acepten caracteres válidos.
 - se agrego un temporizador de 3s a los mensajes de error.
+- se agrego un tiempo maximo para mostrar los mensajes de error y a la animacion inical
+- se agrega mensaje de error no hay texto para copiar
 
 ## Código Fuente
 
@@ -56,27 +60,38 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-   //logo más página alura
+          <div id="loader" class="loader">
+              <div class="loading">
+                 <span></span>
+                  <span></span>
+                 <span></span>
+              <span></span>
+           </div>
+        </div>
+     <div class="container">
       <a href="https://www.aluracursos.com/">
          <img src="alura3.svg" alt="logo alura" class="logo">
         </a>
-              
+
         <h1>Encriptador de Texto</h1>
+
+
         <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
         <button onclick="encryptText()">Encriptar</button>
         <button onclick="decryptText()">Desencriptar</button>
+
+
+
         <textarea id="outputText" placeholder="El resultado aparecerá aquí..." readonly></textarea>
         <button onclick="copyText()">Copiar</button>
         <p id="errorMessage" class="error"></p>
         <p id="deviceMessage" class="device"></p>
         <div id="copyMessage" class="copy-message">¡Texto copiado!</div>
     </div>
-            //pie de pagina
     <footer class="footer">
-        <p>desarrolado por Jorge echeverria estudiante alura LATAM.</p>
-          
-      
+    <p>Alura Challenge by Jorge echeverria.</p>
+
+
     </footer>
      <script src="script.js"></script>
        </body>
