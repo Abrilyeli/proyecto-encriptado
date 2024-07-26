@@ -27,7 +27,7 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - **Borrar Texto:** El texto de los campos de entrada se borra al presionar los botones de encriptar o desencriptar.
 - **Mensaje de Copiado:** Muestra un mensaje animado cuando el texto es copiado.
 - **Responsivo:** Diseño adaptativo para diferentes dispositivos y orientaciones.
-- **Pie de Página Fijo:** Información del programador con enlaces a redes sociales en el pie de página, que permanece fijo al final de la página.
+- **Pie de Página Fijo:** Información del programador en el pie de página, que permanece fijo al final de la página.
 
 ## Actualizaciones Recientes
 
