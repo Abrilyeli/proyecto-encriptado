@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 2000); // Cambia el tiempo según sea necesario
 });
 
+      let errorTimeout;
+
 
 
 
