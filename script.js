@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         loader.style.display = 'none';
         mainContent.style.display = 'flex';
-    }, 2000); // Cambia el tiempo según sea necesario
+    }, 1000); // Cambia el tiempo según sea necesario
 });
 
-let errorTimeout;
 
 
 
