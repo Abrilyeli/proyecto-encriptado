@@ -28,7 +28,6 @@ El sistema acepta la letra "ñ" y solo funciona con letras minúsculas sin acent
 - **Mensaje de Copiado:** Muestra un mensaje animado cuando el texto es copiado.
 - **Responsivo:** Diseño adaptativo para diferentes dispositivos y orientaciones.
 - **Pie de Página Fijo:** Información del programador con enlaces a redes sociales en el pie de página, que permanece fijo al final de la página.
-- **Pull-to-Refresh:** Refresca la página al realizar el gesto de tirar hacia abajo en dispositivos móviles.
 
 ## Actualizaciones Recientes
 
