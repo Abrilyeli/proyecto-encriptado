@@ -78,7 +78,6 @@ body {
     }
 }
 
-
 .container {
     background-color: #1D3557;
     padding: 20px;
@@ -87,27 +86,25 @@ body {
     text-align: center;
     max-width: 600px;
     width: 90%;
-    display: none;
+    display: flex;
     flex-direction: column;
-   align-items: center;
-  }
-    
+    align-items: center;
+}
+
 .logo {
     position: fixed;
     width: 65px;
     height: auto;
     top: 10px;
     left: 10px;
-    transition: transform 0.2s
-    ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 .logo:active { 
     transform: scale(1.5);
 }
 
-
 h1 {
-   color: #E5E5E5;
+    color: #E5E5E5;
     margin: 0 0 20px 0;
 }
 
@@ -146,6 +143,7 @@ button:hover {
     font-weight: bold;
     color: #E5E5E5;
 }
+
 .copy-message {
     display: none;
     position: fixed;
@@ -180,8 +178,6 @@ button:hover {
     animation: slideInOut 2s forwards;
 }
 
-
-/* Estilos específicos para diferentes dispositivos */
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%;
@@ -211,7 +207,7 @@ button:hover {
     margin-top: 10px;
     text-align: center;
 }
-    
+
 .footer {
     margin-top: 20px;
     background-color: #007BFF;
@@ -228,9 +224,3 @@ button:hover {
     font-weight: bold;
 }
 
-
-
-.footer {
-    margin-top: 20px;
-    background-color: #003049;
-}
