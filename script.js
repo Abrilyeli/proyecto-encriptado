@@ -98,16 +98,16 @@ if (outputTextElement.value.trim() === "") {
         showError('No hay texto para copiar.');
         return;
     }
-    outputTextElement.select();
-    document.execCommand('copy');
-
-    // Limpiar los campos de texto
-    document.getElementById('inputText').value = '';
-    document.getElementById('outputText').value = '';
-
-    // Mostrar mensaje de copiado
-    showCopyMessage();
-  showError ('');
+  navigator.clipboard.writeText(outputTextElement.value)
+        .then(() => {
+            document.getElementById('inputText').value = '';
+            document.getElementById('outputText').value = '';
+            showCopyMessage();
+            showError('');
+        })
+        .catch(err => {
+            showError('Error al copiar el texto: ' + err);
+        });
 }
 
 // Mostrar mensaje de copiado
