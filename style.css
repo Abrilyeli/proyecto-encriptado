@@ -204,6 +204,12 @@ button:hover {
     }
 }
 
+
+@media only screen and (orientation: landscape) {
+    .footer {
+        display: none;
+    }
+}
 .error-message {
     color: red;
     font-size: 1em;
