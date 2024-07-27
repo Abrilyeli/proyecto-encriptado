@@ -80,7 +80,7 @@ body {
 
 .container {
      display: none;
-    background-image: url(imagen.jpg);
+    background-image: url(imagen2.jpg);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(128,128,128,0.5);
@@ -210,7 +210,7 @@ button:hover {
 
 .footer {
     margin-top: 20px;
-    background-color: #007BFF;
+    background-image: url(pie2.jpg);
     color: white;
     width: 100%;
     text-align: center;
