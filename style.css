@@ -80,7 +80,7 @@ body {
 
 .container {
      display: none;
-    background-color: #1D3557;
+    background-image: url(imagen.jpg);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(128,128,128,0.5);
