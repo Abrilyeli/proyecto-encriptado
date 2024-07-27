@@ -79,6 +79,7 @@ body {
 }
 
 .container {
+     display: none;
     background-color: #1D3557;
     padding: 20px;
     border-radius: 8px;
@@ -86,7 +87,6 @@ body {
     text-align: center;
     max-width: 600px;
     width: 90%;
-    display: inline;
     flex-direction: column;
     align-items: center;
 }
