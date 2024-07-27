@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         loader.style.display = 'none';
         mainContent.style.display = 'flex';
-    }, 1500);
+    }, 2000);
 });
 
       
