@@ -107,7 +107,7 @@ if (outputTextElement.value.trim() === "") {
 
     // Mostrar mensaje de copiado
     showCopyMessage();
-  ShowError ('');
+  showError ('');
 }
 
 // Mostrar mensaje de copiado
