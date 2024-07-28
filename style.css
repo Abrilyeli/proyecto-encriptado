@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@ body {
     background-image: url(Imagen.principal.jpg);
     background-size: cover;
     background-position: center;
-    margin: 8px;
+    margin: 0;
     overflow: hidden;
     color: #333;
 }
