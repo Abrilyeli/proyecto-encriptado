@@ -80,7 +80,7 @@ body {
 
 .contenedor {
     display: none;
-    background-image: url(imagen5.jpg);
+    background-color: #012e46;
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -128,7 +128,7 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #696969;
+    background-color: #808080;
     color: white;
     cursor: pointer;
 }
@@ -315,6 +315,7 @@ body.modo-oscuro {
 
 body.modo-oscuro .contenedor {
     background-color: #1e1e1e;
+    background-image: url(imagen5.jpg);
 }
 
 body.modo-oscuro textarea,
