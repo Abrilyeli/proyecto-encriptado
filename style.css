@@ -137,6 +137,21 @@ button:hover {
     background-color: #c0c0c0;
 }
 
+.btn-limpiar {
+    display: none; /* Ocultar el botón por defecto */
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff0000; /* Color de fondo del botón */
+    color: white;
+    cursor: pointer;
+}
+
+.btn-limpiar:hover {
+    background-color: #cc0000; /* Color de fondo del botón en hover */
+}
+
 .error {
     color: red;
     font-weight: bold;
