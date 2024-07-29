@@ -1,14 +1,13 @@
-// duración animación de inicio
+// Duración animación de inicio
 document.addEventListener("DOMContentLoaded", function() {
     const cargador = document.getElementById('cargador');
     const contenidoPrincipal = document.getElementById('contenidoPrincipal');
 
     setTimeout(() => {
         cargador.style.display = 'none';
-        contenidoPrincipal.display = 'flex';
+        contenidoPrincipal.style.display = 'flex';
     }, 2000);
 });
-
 
 // Validar que el texto contenga solo letras minúsculas y espacios
 function validarEntrada(texto) {
@@ -17,8 +16,8 @@ function validarEntrada(texto) {
 }
 
 // Mostrar mensaje de error
-    let errorTimeout;
-    function mostrarError(mensaje) {
+let errorTimeout;
+function mostrarError(mensaje) {
     const mensajeError = document.getElementById('mensajeError');
     mensajeError.textContent = mensaje;
     if (errorTimeout) {
@@ -27,14 +26,13 @@ function validarEntrada(texto) {
 
     if (mensaje) {
         errorTimeout = setTimeout(() => {
-            mesajeError.textContent = '';
+            mensajeError.textContent = '';
         }, 2500);
     }
 }
 
-
 // Encriptar el texto
-    function encriptarTexto() {
+function encriptarTexto() {
     const elementoTextoEntrada = document.getElementById('textoEntrada');
     const textoEntrada = elementoTextoEntrada.value.trim();
 
@@ -44,7 +42,7 @@ function validarEntrada(texto) {
     }
 
     if (!validarEntrada(textoEntrada)) {
-        mostrarError('El texto solo debe contener letras minúsculas y espacios. No se permiten acentos ni  caracteres especiales.');
+        mostrarError('El texto solo debe contener letras minúsculas y espacios. No se permiten acentos ni caracteres especiales.');
         return;
     }
 
@@ -94,14 +92,14 @@ function desencriptarTexto() {
 // Copiar el texto encriptado/desencriptado al portapapeles
 function copiarTexto() {
     const elementoTextoSalida = document.getElementById('textoSalida');
-if (elementoTextoSalida.value.trim() === "") {
+    if (elementoTextoSalida.value.trim() === "") {
         mostrarError('No hay texto para copiar.');
         return;
     }
-  navigator.clipboard.writeText(elementoTextoSalida.value)
+    navigator.clipboard.writeText(elementoTextoSalida.value)
         .then(() => {
             document.getElementById('textoEntrada').value = '';
-            document.getElementById('Textosalida').value = '';
+            document.getElementById('textoSalida').value = '';
             mostrarMensajeCopiado();
             mostrarError('');
         })
@@ -111,7 +109,7 @@ if (elementoTextoSalida.value.trim() === "") {
 }
 
 // Mostrar mensaje de copiado
-function mostrarMemsajeCopiado() {
+function mostrarMensajeCopiado() {
     const mensajeCopiado = document.getElementById('mensajeCopiado');
     mensajeCopiado.classList.add('mostrar');
     setTimeout(() => {
