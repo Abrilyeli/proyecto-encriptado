@@ -7,41 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-          <div id="cargador" class="cargador">
-              <div class="cargando">
-                 <span></span>
-                  <span></span>
-                 <span></span>
-              <span></span>
-           </div>
+    <div id="cargador" class="cargador" role="status" aria-live="polite">
+        <div class="cargando">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-     <div id="contenidoPrincipal" class="contenedor">
-      <a href="https://www.aluracursos.com/">
-         <img src="alura3.svg" alt="logo alura" class="logo">
+    </div>
+    <div id="contenidoPrincipal" class="contenedor">
+        <a href="https://www.aluracursos.com/" aria-label="Ir a Alura Cursos">
+            <img src="alura3.svg" alt="Logo de Alura" class="logo">
         </a>
 
         <h1>Encriptador de Texto</h1>
 
+        <textarea id="textoEntrada" placeholder="Ingrese el texto aquí..." aria-label="Texto a encriptar o desencriptar"></textarea>
+        <div class="contenedor-botones">
+            <button onclick="encriptarTexto()">Encriptar</button>
+            <button onclick="desencriptarTexto()">Desencriptar</button>
+        </div>  
 
-        <textarea id="textoEntrada" placeholder="Ingrese el texto aquí..."></textarea>
-         <div class="contenedor-botones">
-        <button onclick="encriptarTexto()">Encriptar</button>
-        <button onclick="desencriptarTexto()">Desencriptar</button>
-         </div>  
-
-
-
-        <textarea id="textoSalida" placeholder="El resultado aparecerá aquí..." readonly></textarea>
+        <textarea id="textoSalida" placeholder="El resultado aparecerá aquí..." readonly aria-label="Resultado"></textarea>
         <button onclick="copiarTexto()">Copiar</button>
         <p id="mensajeError" class="error"></p>
         <p id="mensajeDispositivo" class="dispositivo"></p>
-        <div id="mensajeCopiado" class="mensaje-copiado">¡Texto copiado!</div>
+        <div id="mensajeCopiado" class="mensaje-copiado" role="alert">¡Texto copiado!</div>
     </div>
     <footer class="pie">
-    <p>Alura Challenge by Jorge echeverria.</p>
-
-
+        <p>Alura Challenge by Jorge Echeverría.</p>
     </footer>
-     <script src="script.js"></script>
-       </body>
+    <script src="script.js"></script>
+</body>
 </html>
