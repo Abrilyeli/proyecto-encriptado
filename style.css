@@ -69,7 +69,7 @@ body {
     animation-delay: 1s;
 }
 
-@keyframes rotar {
+@keyframes rotate {
     0% {
         transform: rotate(0deg);
     }
@@ -79,8 +79,8 @@ body {
 }
 
 .contenedor {
-     display: none;
-    background-image: url(imagenx.jpg);
+    display: none;
+    background-image: url(imagen5.jpg);
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -91,7 +91,7 @@ body {
     width: 90%;
     flex-direction: column;
     align-items: center;
-    gap: 10px
+    gap: 10px;
 }
 
 .logo {
@@ -102,6 +102,7 @@ body {
     left: 10px;
     transition: transform 0.2s ease-in-out;
 }
+
 .logo:active { 
     transform: scale(1.5);
 }
@@ -204,23 +205,16 @@ button:hover {
     }
 }
 
-
 @media only screen and (orientation: landscape) {
     .pie {
         display: none;
     }
 }
-.mensaje-error {
-    color: red;
-    font-size: 1em;
-    margin-top: 10px;
-    text-align: center;
-}
 
 .pie {
     margin-top: 20px;
-    background-image: url(pie2.jpg);
-    color: white;
+    background-color: beige;
+    color: black;
     width: 100%;
     text-align: center;
     padding: 10px 0;
