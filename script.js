@@ -7,7 +7,31 @@ document.addEventListener("DOMContentLoaded", function() {
         cargador.style.display = 'none';
         contenidoPrincipal.style.display = 'flex';
     }, 2000);
+
+// Funcionalidad de modo oscuro
+    const modoOscuroToggle = document.getElementById('modoOscuroToggle');
+    modoOscuroToggle.addEventListener('click', () => {
+        document.body.classList.toggle('modo-oscuro');
+        if (document.body.classList.contains('modo-oscuro')) {
+            modoOscuroToggle.textContent = '☀️';
+        } else {
+            modoOscuroToggle.textContent = '🌙';
+        }
+    });
 });
+
+// Funcionalidad de la ventana emergente de reglas
+    const iconoAyuda = document.getElementById('iconoAyuda');
+    const ventanaReglas = document.getElementById('ventanaReglas');
+    const cerrarVentana = document.getElementById('cerrarVentana');
+
+    iconoAyuda.addEventListener('click', () => {
+        ventanaReglas.classList.add('mostrar');
+    });
+
+    cerrarVentana.addEventListener('click', () => {
+        ventanaReglas.classList.remove('mostrar');
+    });
 
 // Validar que el texto contenga solo letras minúsculas y espacios
 function validarEntrada(texto) {
