@@ -7,40 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-          <div id="loader" class="loader">
-              <div class="loading">
+          <div id="cargador" class="cargador">
+              <div class="cargando">
                  <span></span>
                   <span></span>
                  <span></span>
               <span></span>
            </div>
         </div>
-     <div id="mainContent" class="container">
+     <div id="contenidoPrincipal" class="contenedor">
       <a href="https://www.aluracursos.com/">
          <img src="alura3.svg" alt="logo alura" class="logo">
         </a>
-        
-        <h1>Encriptador de Texto</h1>
-      
 
-        <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
-         <div class="button-container">
-        <button onclick="encryptText()">Encriptar</button>
-        <button onclick="decryptText()">Desencriptar</button>
+        <h1>Encriptador de Texto</h1>
+
+
+        <textarea id="textoEntrada" placeholder="Ingrese el texto aquí..."></textarea>
+         <div class="contenedor-botones">
+        <button onclick="encriptarTexto()">Encriptar</button>
+        <button onclick="desencriptarTexto()">Desencriptar</button>
          </div>  
 
 
 
-        <textarea id="outputText" placeholder="El resultado aparecerá aquí..." readonly></textarea>
-        <button onclick="copyText()">Copiar</button>
-        <p id="errorMessage" class="error"></p>
-        <p id="deviceMessage" class="device"></p>
-        <div id="copyMessage" class="copy-message">¡Texto copiado!</div>
+        <textarea id="textoSalida" placeholder="El resultado aparecerá aquí..." readonly></textarea>
+        <button onclick="copiarTexto()">Copiar</button>
+        <p id="mensajeError" class="error"></p>
+        <p id="mensajeDispositivo" class="dispositivo"></p>
+        <div id="mensajeCopiado" class="mensaje-copiado">¡Texto copiado!</div>
     </div>
-    <footer class="footer">
+    <footer class="pie">
     <p>Alura Challenge by Jorge echeverria.</p>
-          
-      
+
+
     </footer>
      <script src="script.js"></script>
        </body>
