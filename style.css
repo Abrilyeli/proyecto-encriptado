@@ -14,7 +14,7 @@ body {
 }
 
 /* Estilos del cargador */
-.loader {
+.cargador {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,13 +27,13 @@ body {
     z-index: 1000;
 }
 
-.loading {
+.cargando {
     position: relative;
     width: 100px;
     height: 100px;
 }
 
-.loading span {
+.cargando span {
     position: absolute;
     width: 50%;
     height: 50%;
@@ -41,35 +41,35 @@ body {
     animation: rotate 2s infinite;
 }
 
-.loading span:nth-child(1) {
+.cargando span:nth-child(1) {
     border-radius: 50% 50% 0 50%;
     background-color: #ffbe0b;
     transform-origin: bottom right;
     animation-delay: 0s;
 }
 
-.loading span:nth-child(2) {
+.cargando span:nth-child(2) {
     border-radius: 50% 50% 50% 0;
     background-color: #ff006e;
     transform-origin: bottom left;
     animation-delay: 0.5s;
 }
 
-.loading span:nth-child(3) {
+.cargando span:nth-child(3) {
     border-radius: 50% 0 50% 50%;
     background-color: #fb5607;
     transform-origin: top right;
     animation-delay: 1.5s;
 }
 
-.loading span:nth-child(4) {
+.cargando span:nth-child(4) {
     border-radius: 0 50% 50% 50%;
     background-color: #8338ec;
     transform-origin: top left;
     animation-delay: 1s;
 }
 
-@keyframes rotate {
+@keyframes rotar {
     0% {
         transform: rotate(0deg);
     }
@@ -78,7 +78,7 @@ body {
     }
 }
 
-.container {
+.contenedor {
      display: none;
     background-image: url(imagenx.jpg);
     background-size: cover;
@@ -141,13 +141,13 @@ button:hover {
     font-weight: bold;
 }
 
-.device {
+.dispositivo {
     margin-top: 10px;
     font-weight: bold;
     color: #E5E5E5;
 }
 
-.copy-message {
+.mensaje-copiado {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -176,13 +176,13 @@ button:hover {
     100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
 }
 
-.copy-message.show {
+.mensaje-copiado.mostrar {
     display: block;
     animation: slideInOut 2s forwards;
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
+    .contenedor {
         width: 100%;
         padding: 10px;
     }
@@ -193,31 +193,31 @@ button:hover {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .container {
+    .contenedor {
         max-width: 80%;
     }
 }
 
 @media only screen and (min-width: 1025px) {
-    .container {
+    .contenedor {
         max-width: 60%;
     }
 }
 
 
 @media only screen and (orientation: landscape) {
-    .footer {
+    .pie {
         display: none;
     }
 }
-.error-message {
+.mensaje-error {
     color: red;
     font-size: 1em;
     margin-top: 10px;
     text-align: center;
 }
 
-.footer {
+.pie {
     margin-top: 20px;
     background-image: url(pie2.jpg);
     color: white;
@@ -228,8 +228,7 @@ button:hover {
     bottom: 0;
 }
 
-.footer p {
+.pie p {
     margin: 0;
     font-weight: bold;
 }
-
