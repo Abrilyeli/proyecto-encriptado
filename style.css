@@ -133,10 +133,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #c0c0c0;
-}
-
 .btn-limpiar {
     display: none; /* Ocultar el botón por defecto */
     margin: 5px;
@@ -150,6 +146,10 @@ button:hover {
 
 .btn-limpiar:hover {
     background-color: #cc0000; /* Color de fondo del botón en hover */
+}
+
+button:hover {
+    background-color: #c0c0c0;
 }
 
 .error {
@@ -226,11 +226,6 @@ button:hover {
     }
 }
 
-@media only screen and (orientation: landscape) {
-    .pie {
-        display: none;
-    }
-}
 
 .pie {
     margin-top: 20px;
@@ -343,3 +338,4 @@ body.modo-oscuro .pie {
     background-color: #1e1e1e;
     color: #e5e5e5;
 }
+
