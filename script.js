@@ -33,6 +33,28 @@ document.addEventListener("DOMContentLoaded", function() {
         ventanaReglas.classList.remove('mostrar');
     });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const textarea = document.getElementById('textoEntrada');
+    const btnLimpiar = document.getElementById('btnLimpiar');
+
+    // Mostrar u ocultar el botón basado en el contenido del campo de texto
+    textarea.addEventListener('input', function() {
+        if (textarea.value.trim() !== '') {
+            btnLimpiar.style.display = 'block'; // Mostrar el botón
+        } else {
+            btnLimpiar.style.display = 'none'; // Ocultar el botón
+        }
+    });
+});
+
+// Función para limpiar el campo de texto
+function limpiarCampos() {
+    const textarea = document.getElementById('textoEntrada');
+    textarea.value = '';
+    document.getElementById('textoSalida').value = ''; // Opcional: limpiar también el campo de salida
+    document.getElementById('btnLimpiar').style.display = 'none'; // Ocultar el botón después de limpiar
+}
+
 // Validar que el texto contenga solo letras minúsculas y espacios
 function validarEntrada(texto) {
     const regex = /^[a-zñ0-9\s]+$/;
