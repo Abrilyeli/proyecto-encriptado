@@ -134,8 +134,14 @@ button {
     cursor: pointer;
 }
 
-
-
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px
+    
+}
+ 
 .btn-limpiar {
     display: none; /* Ocultar el botón por defecto */
     margin: 5px;
@@ -153,6 +159,13 @@ button {
 
 button:hover {
     background-color: #c0c0c0;
+}
+button#compartirTexto {
+    background-color: #007bff; /* Cambia el color si deseas */
+}
+
+button#compartirTexto:hover {
+    background-color: #0056b3; /* Cambia el color si deseas */
 }
 
 .error {
@@ -205,31 +218,40 @@ button:hover {
         width: 100%;
         padding: 10px;
     }
+  
+  /* Para pantallas en modo horizontal */
+    @media (orientation: landscape) {
+        body {
+            overflow-x: auto;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            width: 1200px; /* Ajusta este valor según sea necesario */
+        }
+
+        .contenedor-botones {
+            flex-direction: column;
+        }
+
+        .pie {
+            display: none;
+        }
+    }
+}
 
     textarea {
         height: 80px;
     }
 
-    /* Para pantallas en modo horizontal */
-@media (orientation: landscape) {
-    body {
-        overflow-x: auto;
-    }
-
-    .contenedor {
-        display: flex;
-        flex-direction: row;
-        width: 1200px; /* Ajusta este valor según sea necesario */
-    }
-
-    .contenedor-botones {
-        flex-direction: column;
-    }
-
-    .pie {
-        display: none;
+    @media (orientation: landscape) { /* Cambio añadido */
+        .pie {
+            display: none;
+        }
     }
 }
+
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .contenedor {
         max-width: 80%;
@@ -354,4 +376,3 @@ body.modo-oscuro .pie {
     background-color: #1e1e1e;
     color: #e5e5e5;
 }
-
