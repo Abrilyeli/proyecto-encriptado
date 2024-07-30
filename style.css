@@ -147,14 +147,14 @@ button {
     margin: 5px;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
-    background-color: #ff0000; /* Color de fondo del botón */
+    border-radius: 18px;
+    background-color: #ff0000;
     color: white;
     cursor: pointer;
 }
 
 .btn-limpiar:hover {
-    background-color: #cc0000; /* Color de fondo del botón en hover */
+    background-color: #cc0000;
 }
 
 button:hover {
@@ -245,7 +245,7 @@ button#compartirTexto:hover {
         height: 80px;
     }
 
-    @media (orientation: landscape) { /* Cambio añadido */
+    @media (orientation: landscape) {
         .pie {
             display: none;
         }
