@@ -215,13 +215,26 @@ button:hover {
         height: 80px;
     }
 
-    @media (orientation: landscape) { /* Cambio añadido */
-        .pie {
-            display: none;
-        }
+    /* Para pantallas en modo horizontal */
+@media (orientation: landscape) {
+    body {
+        overflow-x: auto;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        width: 1200px; /* Ajusta este valor según sea necesario */
+    }
+
+    .contenedor-botones {
+        flex-direction: column;
+    }
+
+    .pie {
+        display: none;
     }
 }
-
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     .contenedor {
         max-width: 80%;
