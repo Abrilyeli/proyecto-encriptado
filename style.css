@@ -134,11 +134,6 @@ button {
     cursor: pointer;
 }
 
-.contenedor-botones {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
 
 
 .btn-limpiar {
