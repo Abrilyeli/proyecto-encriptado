@@ -161,11 +161,11 @@ button:hover {
     background-color: #c0c0c0;
 }
 button#compartirTexto {
-    background-color: #007bff; /* Cambia el color si deseas */
+    background-color: #808080;
 }
 
 button#compartirTexto:hover {
-    background-color: #0056b3; /* Cambia el color si deseas */
+    background-color: #c0c0c0;
 }
 
 .error {
@@ -375,4 +375,12 @@ body.modo-oscuro button {
 body.modo-oscuro .pie {
     background-color: #1e1e1e;
     color: #e5e5e5;
+}
+body.modo-oscuro button#compartirTexto {
+    background-color: #333;
+    color: #e5e5e5;
+}
+
+body.modo-oscuro button#compartirTexto:hover {
+    background-color: #555;
 }
