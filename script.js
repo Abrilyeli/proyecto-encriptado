@@ -1,4 +1,4 @@
-// Duración animación de inicio
+// animación de inicio
 document.addEventListener("DOMContentLoaded", function() {
     const cargador = document.getElementById('cargador');
     const contenidoPrincipal = document.getElementById('contenidoPrincipal');
