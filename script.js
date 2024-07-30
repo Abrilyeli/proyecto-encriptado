@@ -157,7 +157,7 @@ function copiarTexto() {
 
 function compartirTexto() {
     const textoSalida = document.getElementById('textoSalida').value;
-    
+    const url = window.location.href;
     if (!textoSalida.trim()) {
         alert('Ingrese texto para compartir.');
         return;
@@ -165,7 +165,8 @@ function compartirTexto() {
     if (navigator.share) {
         navigator.share({
             title: 'Texto Encriptado',
-            text: textoSalida,
+            text: `Mensaje encriptado:\n${textoSalida}\n\nEnlace:\n${url}`
+        }).then(() => {
             url: window.location.href
         }).then(() => {
             console.log('Compartido exitosamente');
