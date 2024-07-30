@@ -34,7 +34,7 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - **Pie de Página Fijo:** Información del programador en el pie de página, que permanece fijo al final de la página y pude desaparecer al cambiar horientacion horizontal en pantallas pequeñas.
 
 ## Actualizaciones Recientes
-
+---
 ### Cambios Recientes en CSS:
 - Ajustes para mantener la posición de los elementos al cambiar la orientación de la página.
 - se agregó un mensaje de error para cuando no se ponga ningun texto en el cuadro
@@ -44,7 +44,7 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - se cambia apariencia de botones y se agrega uno para activar y desactivar modo oscuro
 - nuevo botones para limpiar y compartir .
   
-
+---
 ### Cambios Recientes en JavaScript:
 - Funcionalidad para borrar el texto de los campos de entrada al presionar los botones de encriptar o desencriptar.
 - Eliminación de la alerta para el copiado del texto.
