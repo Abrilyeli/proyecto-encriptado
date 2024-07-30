@@ -164,6 +164,28 @@ function mostrarMensajeCopiado() {
     }, 2000);
 }
 
+function compartirTexto() {
+    const textoSalida = document.getElementById('textoSalida').value;
+    
+    if (!textoSalida.trim()) {
+        alert('Ingrese texto para compartir.');
+        return;
+    }
+    
+    if (navigator.share) {
+        navigator.share({
+            title: 'Texto Encriptado',
+            text: textoSalida,
+            url: window.location.href
+        }).then(() => {
+            console.log('Compartido exitosamente');
+        }).catch((error) => {
+            console.error('Error al compartir', error);
+        });
+    } else {
+        alert('La API de compartir no es compatible con este navegador.');
+    }
+}
 
 
 // Detectar el tipo de dispositivo
