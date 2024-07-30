@@ -52,7 +52,7 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - se agrego un temporizador de 3s a los mensajes de error.
 - se agrego un tiempo maximo para mostrar los mensajes de error y a la animacion inical
 - se agrega mensaje de error no hay texto para copiar
-- - **Modo Oscuro:** Implementación de un modo oscuro para la interfaz.
+- **Modo Oscuro:** Implementación de un modo oscuro para la interfaz.
 - **Compartir:** Funcionalidad para compartir el texto en redes sociales o a través de otras aplicaciones.
 - **Nuevo Botón de Limpiar:** Aparece un botón de limpiar los campos de entrada de texto mientras se escribe.
 - **Botón de Reglas:** Se agregó un botón que muestra las reglas de encriptación.
