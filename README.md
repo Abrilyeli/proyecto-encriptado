@@ -2,7 +2,7 @@
 
 # Proyecto de Encriptación de Texto
 
-Este proyecto es una aplicación web que permite encriptar y desencriptar texto utilizando reglas específicas de reemplazo de caracteres. También ofrece la funcionalidad de copiar el texto encriptado o desencriptado al portapapeles y es completamente responsivo, adaptándose a diferentes dispositivos como móviles, tablets y laptops.
+Este proyecto es una aplicación web que permite encriptar y desencriptar texto utilizando reglas específicas de reemplazo de caracteres. También ofrece la funcionalidad de copiar como compartir el texto encriptado o desencriptado  y es completamente responsivo, adaptándose a diferentes dispositivos como móviles, tablets y laptops.
 
 ## Reglas de Encriptación
 
@@ -27,7 +27,11 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - **Borrar Texto:** El texto de los campos de entrada se borra al presionar los botones de encriptar o desencriptar.
 - **Mensaje de Copiado:** Muestra un mensaje animado cuando el texto es copiado.
 - **Responsivo:** Diseño adaptativo para diferentes dispositivos y orientaciones.
-- **Pie de Página Fijo:** Información del programador en el pie de página, que permanece fijo al final de la página.
+- **Modo Oscuro:** Se agregó un modo oscuro para mejorar la experiencia del usuario en ambientes con poca luz.
+- **Compartir:** Funcionalidad para compartir el texto encriptado o desencriptado.
+- **Botón de Limpiar:** Aparece un nuevo botón que permite limpiar los campos de entrada de texto.
+- **Botón de Reglas:** Se agregó un botón que muestra las reglas de encriptación.
+- **Pie de Página Fijo:** Información del programador en el pie de página, que permanece fijo al final de la página y pude desaparecer al cambiar horientacion horizontal en pantallas pequeñas.
 
 ## Actualizaciones Recientes
 
@@ -37,7 +41,9 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - Se agregó una animación para el mensaje de copiado, ahora el mensaje es más grande y de letras de color blanco dentro de un rectangulo verde.
 - Se asegura que los elementos como el título y los textos permanezcan visibles y correctamente posicionados.
 - se agrego una animacion de carna inical.
-- 
+- se cambia apariencia de botones y se agrega uno para activar y desactivar modo oscuro
+- nuevo botones para limpiar y compartir .
+  
 
 ### Cambios Recientes en JavaScript:
 - Funcionalidad para borrar el texto de los campos de entrada al presionar los botones de encriptar o desencriptar.
@@ -46,6 +52,12 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - se agrego un temporizador de 3s a los mensajes de error.
 - se agrego un tiempo maximo para mostrar los mensajes de error y a la animacion inical
 - se agrega mensaje de error no hay texto para copiar
+- - **Modo Oscuro:** Implementación de un modo oscuro para la interfaz.
+- **Compartir:** Funcionalidad para compartir el texto en redes sociales o a través de otras aplicaciones.
+- **Nuevo Botón de Limpiar:** Aparece un botón de limpiar los campos de entrada de texto mientras se escribe.
+- **Botón de Reglas:** Se agregó un botón que muestra las reglas de encriptación.
+---
+¡Gracias por utilizar esta aplicación de encriptación de texto! Si tienes alguna sugerencia o encuentras algún problema, por favor abre un issue en el repositorio.
 
 ## Código Fuente
 
@@ -60,39 +72,59 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-          <div id="loader" class="loader">
-              <div class="loading">
-                 <span></span>
-                  <span></span>
-                 <span></span>
-              <span></span>
-           </div>
+    <div id="cargador" class="cargador" role="status" aria-live="polite">
+        <div class="cargando">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-     <div class="container">
-      <a href="https://www.aluracursos.com/">
-         <img src="alura3.svg" alt="logo alura" class="logo">
-        </a>
-
-        <h1>Encriptador de Texto</h1>
-
-
-        <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
-        <button onclick="encryptText()">Encriptar</button>
-        <button onclick="decryptText()">Desencriptar</button>
-
-
-
-        <textarea id="outputText" placeholder="El resultado aparecerá aquí..." readonly></textarea>
-        <button onclick="copyText()">Copiar</button>
-        <p id="errorMessage" class="error"></p>
-        <p id="deviceMessage" class="device"></p>
-        <div id="copyMessage" class="copy-message">¡Texto copiado!</div>
     </div>
-    <footer class="footer">
-    <p>Alura Challenge by Jorge echeverria.</p>
+    <div id="contenidoPrincipal" class="contenedor">
+        <a href="https://www.aluracursos.com/" aria-label="Ir a Alura Cursos">
+            <img src="alura3.svg" alt="Logo de Alura" class="logo">
+        </a>
+       <button id="modoOscuroToggle" class="modo-oscuro-toggle">🌙</button> <!-- Interruptor de modo oscuro -->
 
+      <!-- Icono de ayuda -->
+<button id="iconoAyuda" class="icono-ayuda">❓</button>
 
+<!-- Ventana emergente de reglas -->
+<div id="ventanaReglas" class="ventana-reglas">
+    <div class="ventana-contenido">
+        <span id="cerrarVentana" class="cerrar-ventana">&times;</span>
+        <h2>Reglas del Encriptador</h2>
+        <p></p>
+        <p></p>
+        <ul>
+            <li>Debe funcionar solo con letras minúsculas</li>
+            <li>No deben ser utilizados letras con acentos ni caracteres especiales</li>
+           <li>Se acepta la letra ñ</li>
+            <li>Se aceptan numeros</li>
+            <li>Se aceptan espacios.</li>
+        </ul>
+    </div>
+</div>
+            <h1>Encriptador de Texto</h1>
+
+        <textarea id="textoEntrada" placeholder="Ingrese el texto aquí..." aria-label="Texto a encriptar o desencriptar"></textarea>
+        <div class="contenedor-botones">
+            <button onclick="encriptarTexto()">Encriptar</button>
+            <button onclick="desencriptarTexto()">Desencriptar</button>
+              </div>  
+        <textarea id="textoSalida" placeholder="El resultado aparecerá aquí..." readonly aria-label="Resultado"></textarea>
+      <div class="contenedor-botones">
+      <button onclick="copiarTexto()">Copiar</button>
+      <button id="compartirTexto" onclick="compartirTexto()">Compartir</button>
+        </div>
+        <button id="btnLimpiar" class="btn-limpiar" onclick="limpiarCampos()">Limpiar</button>
+        <p id="mensajeError" class="error"></p>
+        <p id="mensajeDispositivo" class="dispositivo"></p>
+        <div id="mensajeCopiado" class="mensaje-copiado" role="alert">¡Texto copiado!</div>
+    </div>
+    <footer class="pie">
+        <p>Alura Challenge by Jorge Echeverría.</p>
     </footer>
-     <script src="script.js"></script>
-       </body>
+    <script src="script.js"></script>
+</body>
 </html>
