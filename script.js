@@ -145,14 +145,21 @@ function copiarTexto() {
     }
     navigator.clipboard.writeText(elementoTextoSalida.value)
         .then(() => {
-            document.getElementById('textoEntrada').value = '';
-            document.getElementById('textoSalida').value = '';
+            
             mostrarMensajeCopiado();
             mostrarError('');
         })
         .catch(err => {
             mostrarError('Error al copiar el texto: ' + err);
         });
+}
+// Mostrar mensaje de copiado
+function mostrarMensajeCopiado() {
+    const mensajeCopiado = document.getElementById('mensajeCopiado');
+    mensajeCopiado.classList.add('mostrar');
+    setTimeout(() => {
+        mensajeCopiado.classList.remove('mostrar');
+    }, 2000);
 }
 
 function compartirTexto() {
@@ -177,17 +184,6 @@ function compartirTexto() {
         alert('La API de compartir no es compatible con este navegador.');
     }
 }
-
-
-// Mostrar mensaje de copiado
-function mostrarMensajeCopiado() {
-    const mensajeCopiado = document.getElementById('mensajeCopiado');
-    mensajeCopiado.classList.add('mostrar');
-    setTimeout(() => {
-        mensajeCopiado.classList.remove('mostrar');
-    }, 2000);
-}
-
 
 
 // Detectar el tipo de dispositivo
