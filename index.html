@@ -40,20 +40,19 @@
         </ul>
     </div>
 </div>
-      
-      
-
-        <h1>Encriptador de Texto</h1>
+            <h1>Encriptador de Texto</h1>
 
         <textarea id="textoEntrada" placeholder="Ingrese el texto aquí..." aria-label="Texto a encriptar o desencriptar"></textarea>
         <div class="contenedor-botones">
             <button onclick="encriptarTexto()">Encriptar</button>
             <button onclick="desencriptarTexto()">Desencriptar</button>
-        </div>  
+              </div>  
         <textarea id="textoSalida" placeholder="El resultado aparecerá aquí..." readonly aria-label="Resultado"></textarea>
-<div class="contenedor-botones">
-            <button onclick="copiarTexto()">Copiar</button>
-<button id="btnLimpiar" class="btn-limpiar" onclick="limpiarCampos()">Limpiar</button>
+      <div class="contenedor-botones">
+      <button onclick="copiarTexto()">Copiar</button>
+      <button id="compartirTexto" onclick="compartirTexto()">Compartir</button>
+        </div>
+        <button id="btnLimpiar" class="btn-limpiar" onclick="limpiarCampos()">Limpiar</button>
         <p id="mensajeError" class="error"></p>
         <p id="mensajeDispositivo" class="dispositivo"></p>
         <div id="mensajeCopiado" class="mensaje-copiado" role="alert">¡Texto copiado!</div>
