@@ -228,7 +228,7 @@ button#compartirTexto:hover {
         .contenedor {
             display: flex;
             flex-direction: row;
-            width: 1200px; /* Ajusta este valor según sea necesario */
+            width: 1200px;
         }
 
         .contenedor-botones {
@@ -357,7 +357,6 @@ body.modo-oscuro {
 
 body.modo-oscuro .contenedor {
     background-color: #1e1e1e;
-    background-image: url(imagen5.webp);
 }
 
 body.modo-oscuro textarea,
