@@ -49,7 +49,6 @@ El sistema acepta la letra "ñ" y números ,y solo funciona con letras minúscul
 - Funcionalidad para borrar el texto de los campos de entrada al presionar los botones de encriptar o desencriptar.
 - Eliminación de la alerta para el copiado del texto.
 - Mejor manejo de la validación de entradas para asegurar que solo se acepten caracteres válidos.
-- se agrego un temporizador de 3s a los mensajes de error.
 - se agrego un tiempo maximo para mostrar los mensajes de error y a la animacion inical
 - se agrega mensaje de error no hay texto para copiar
 - **Modo Oscuro:** Implementación de un modo oscuro para la interfaz.
