@@ -311,7 +311,7 @@ button#compartirTexto:hover {
 
 .ventana-contenido {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 
