@@ -247,7 +247,7 @@ button#compartirTexto:hover {
 
     @media (orientation: landscape) {
         .pie {
-            display: none;
+            display: flex;
         }
     }
 }
@@ -266,18 +266,21 @@ button#compartirTexto:hover {
 
 
 .pie {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 20px;
     background-color: beige;
     color: black;
-    align-items: center;
-    padding: 10px 20px
-    font-size: 1em;
-    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
 }
 
 .pie p {
     margin: 0;
+    font-weight: bold;
+}
+
 
 }
 
