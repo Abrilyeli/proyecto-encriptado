@@ -89,7 +89,7 @@ function encriptarTexto() {
     }
 
     if (!validarEntrada(textoEntrada)) {
-        mostrarError('El texto solo debe contener letras minúsculas y espacios. No se permiten acentos ni caracteres especiales.');
+        mostrarError('Solo letras minúsculas y espacios. Sin acentos ni caracteres especiales.');
         return;
     }
 
@@ -118,7 +118,7 @@ function desencriptarTexto() {
     }
 
     if (!validarEntrada(textoEntrada)) {
-        mostrarError('El texto solo debe contener letras minúsculas y espacios. No se permiten acentos ni caracteres especiales.');
+        mostrarError('Solo letras minúsculas y espacios. Sin acentos ni caracteres especiales.');
         return;
     }
 
