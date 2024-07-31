@@ -266,19 +266,19 @@ button#compartirTexto:hover {
 
 
 .pie {
-    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
     background-color: beige;
     color: black;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    align-items: center;
+    padding: 10px 20px
+    font-size: 1em;
+    position: relative;
 }
 
 .pie p {
     margin: 0;
-    font-weight: bold;
+
 }
 
 /* Estilos de la ventana emergente */
