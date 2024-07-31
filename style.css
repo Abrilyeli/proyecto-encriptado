@@ -93,6 +93,7 @@ body {
     align-items: center;
     gap: 10px;
     overflow: auto;
+    height: 510px
 }
 
 .logo {
