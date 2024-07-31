@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(Imagen.principal.webp);
+    background-image: url(Imagen.principal.jpg);
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -125,7 +125,7 @@ textarea {
 }
 
 button {
-    margin: 5px;
+    margin: 10px;
     padding: 10px 20px;
     border: none;
     border-radius: 18px;
@@ -138,30 +138,30 @@ button {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px
+    margin-top: 15px
     
 }
  
 .btn-limpiar {
-    display: none; /* Ocultar el botón por defecto */
-    margin: 5px;
+    display: none; 
+    margin: 10px;
     padding: 10px 20px;
     border: none;
     border-radius: 18px;
-    background-color: #ff0000;
+    background-color: #ff0000; 
     color: white;
     cursor: pointer;
 }
 
 .btn-limpiar:hover {
-    background-color: #cc0000;
+    background-color: #cc0000; 
 }
 
 button:hover {
     background-color: #c0c0c0;
 }
 button#compartirTexto {
-    background-color: #808080;
+    background-color: #808080; 
 }
 
 button#compartirTexto:hover {
@@ -228,19 +228,21 @@ button#compartirTexto:hover {
         .contenedor {
             display: flex;
             flex-direction: row;
-            width: 1200px;
+            width: 1200px; /* Ajusta este valor según sea necesario */
         }
 
         .contenedor-botones {
             flex-direction: column;
         }
 
+      
     }
 }
 
     textarea {
         height: 80px;
     }
+
 
 }
 
@@ -270,10 +272,7 @@ button#compartirTexto:hover {
 
 .pie p {
     margin: 0;
-    
-}
-
-
+    font-weight: bold;
 }
 
 /* Estilos de la ventana emergente */
@@ -353,14 +352,12 @@ body.modo-oscuro .modo-oscuro-toggle {
 body.modo-oscuro {
     background-color: #121212;
     color: #e5e5e5;
-     
+    background-image: url(fondoOscuro.jpg);
 }
 
 body.modo-oscuro .contenedor {
     background-color: #1e1e1e;
-    background-image: url(imagen5.webp);
-    background-size: cover;
-    background-position: center;
+    background-image: url(imagen5.jpg);
 }
 
 body.modo-oscuro textarea,
@@ -369,10 +366,7 @@ body.modo-oscuro button {
     color: #e5e5e5;
 }
 
-body.modo-oscuro .pie {
-    background-color: #1e1e1e;
-    color: #e5e5e5;
-}
+/* Estilos del botón de compartir en modo oscuro */
 body.modo-oscuro button#compartirTexto {
     background-color: #333;
     color: #e5e5e5;
@@ -380,4 +374,8 @@ body.modo-oscuro button#compartirTexto {
 
 body.modo-oscuro button#compartirTexto:hover {
     background-color: #555;
+}
+body.modo-oscuro .pie {
+    background-color: #1e1e1e;
+    color: #e5e5e5;
 }
