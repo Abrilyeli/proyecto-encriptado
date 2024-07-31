@@ -363,7 +363,7 @@ body.modo-oscuro .modo-oscuro-toggle {
 body.modo-oscuro {
     background-color: #121212;
     color: #e5e5e5;
-    background-image: url('modoOscuro.webp'); 
+     
 }
 
 body.modo-oscuro .contenedor {
