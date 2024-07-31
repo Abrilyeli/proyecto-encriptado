@@ -93,6 +93,8 @@ body {
     align-items: center;
     gap: 10px;
     overflow: auto;
+    height: auto;
+    max-height: 450px;
 }
 
 .logo {
@@ -122,6 +124,7 @@ textarea {
     padding: 15px;
     box-sizing: border-box;
     resize: none;
+    min-height: 70px;
 }
 
 button {
