@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         cargador.style.display = 'none';
         contenidoPrincipal.style.display = 'flex';
-    }, 2000);
+    }, 1500);
 
 
 // Funcionalidad de modo oscuro
