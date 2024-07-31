@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(Imagen.principal.jpg);
+    background-image: url(Imagen.principal.webp);
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -357,7 +357,7 @@ body.modo-oscuro {
 
 body.modo-oscuro .contenedor {
     background-color: #1e1e1e;
-    background-image: url(imagen5.jpg);
+    background-image: url(imagen5.webp);
 }
 
 body.modo-oscuro textarea,
