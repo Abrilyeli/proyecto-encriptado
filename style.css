@@ -236,7 +236,7 @@ button#compartirTexto:hover {
         }
 
         .pie {
-            display: flex;
+            display: none;
         }
     }
 }
@@ -278,7 +278,7 @@ button#compartirTexto:hover {
 
 .pie p {
     margin: 0;
-    font-weight: bold;
+    
 }
 
 
