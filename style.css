@@ -174,11 +174,6 @@ button#compartirTexto:hover {
     font-weight: bold;
 }
 
-.dispositivo {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #E5E5E5;
-}
 
 .mensaje-copiado {
     display: none;
