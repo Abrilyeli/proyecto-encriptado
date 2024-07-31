@@ -187,18 +187,24 @@ function compartirTexto() {
 
 
 // Detectar el tipo de dispositivo
+
 function detectarDispositivo() {
-    const mensajeDispositivo = document.getElementById('mensajeDispositivo');
     const ancho = window.innerWidth;
+    let tipoDispositivo;
 
     if (ancho <= 600) {
-        mensajeDispositivo.textContent = 'Estás usando un dispositivo móvil.';
+        tipoDispositivo = 'móvil';
     } else if (ancho <= 1024) {
-        mensajeDispositivo.textContent = 'Estás usando una tablet.';
+        tipoDispositivo = 'tablet';
     } else {
-        mensajeDispositivo.textContent = 'Estás usando una computadora.';
+        tipoDispositivo = 'computadora';
     }
-}
 
+    // Almacenar el tipo de dispositivo en el almacenamiento local
+    localStorage.setItem('tipoDispositivo', tipoDispositivo);
+
+    // Registrar en la consola
+    console.log(`Estás usando un ${tipoDispositivo}.`);
+}
 window.onload = detectarDispositivo;
 window.onresize = detectarDispositivo;
