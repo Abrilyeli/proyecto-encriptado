@@ -93,7 +93,7 @@ body {
     align-items: center;
     gap: 10px;
     height: auto;
-    max-height: 450px;
+    height: 450px;
 }
 .logo {
     position: fixed;
