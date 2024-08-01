@@ -122,7 +122,6 @@ textarea {
     padding: 15px;
     box-sizing: border-box;
     resize: none;
-    min-height: 50px;
 }
 
 button {
