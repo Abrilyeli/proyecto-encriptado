@@ -97,24 +97,6 @@ body {
     overflow: hidden;
     position: relative;
 }
-.contenedor::-webkit-scrollbar {
-    display: none;  
-}
-
-.contenedor::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -17px; 
-    bottom: 0;
-    overflow: auto; 
-    pointer-events: none; 
-}
-.contenedor > * {
-    pointer-events: auto;
-}
-
 .logo {
     position: fixed;
     width: 65px;
