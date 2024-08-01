@@ -94,8 +94,6 @@ body {
     gap: 10px;
     height: auto;
     max-height: 450px;
-    overflow: hidden;
-    position: relative;
 }
 .logo {
     position: fixed;
