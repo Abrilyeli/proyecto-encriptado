@@ -121,7 +121,6 @@ textarea {
     padding: 15px;
     box-sizing: border-box;
     resize: none;
-    overflow: auto;
     min-height: 60px
 }
 
