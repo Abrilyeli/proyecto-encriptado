@@ -200,8 +200,6 @@ function detectarDispositivo() {
         tipoDispositivo = 'computadora';
     }
 
-    // Almacenar el tipo de dispositivo en el almacenamiento local
-    localStorage.setItem('tipoDispositivo', tipoDispositivo);
 
     // Registrar en la consola
     console.log(`Estás usando un ${tipoDispositivo}.`);
