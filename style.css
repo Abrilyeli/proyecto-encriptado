@@ -206,50 +206,7 @@ button#compartirTexto:hover {
     animation: slideInOut 2s forwards;
 }
 
-@media only screen and (max-width: 600px) {
-    .contenedor {
-        width: 100%;
-        padding: 10px;
-    }
-  
-  /* Para pantallas en modo horizontal */
-    @media (orientation: landscape) {
-        body {
-            overflow-x: auto;
-        }
 
-        .contenedor {
-            display: flex;
-            flex-direction: row;
-            width: 1200px;
-        }
-
-        .contenedor-botones {
-            flex-direction: column;
-        }
-
-      
-    }
-}
-
-    textarea {
-        height: 80px;
-    }
-
-
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .contenedor {
-        max-width: 80%;
-    }
-}
-
-@media only screen and (min-width: 1025px) {
-    .contenedor {
-        max-width: 60%;
-    }
-}
 
 
 .pie {
@@ -372,4 +329,59 @@ body.modo-oscuro button#compartirTexto:hover {
 body.modo-oscuro .pie {
     background-color: #6e6d6d;
     color: #e5e5e5;
+}
+
+/* Breakpoints de Bootstrap */
+
+/* Estilo para pantallas pequeñas (>= 576px) */
+@media (min-width: 576px) {
+    .contenedor {
+        max-width: 540px;
+        height: auto;
+    }
+}
+
+/* Estilo para pantallas medianas (>= 768px) */
+@media (min-width: 768px) {
+    .contenedor {
+        max-width: 720px;
+        flex-direction: row;
+        height: auto;
+        padding: 40px;
+    }
+    
+    .contenedor-botones {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Estilo para pantallas grandes (>= 992px) */
+@media (min-width: 992px) {
+    .contenedor {
+        max-width: 960px;
+        flex-direction: row;
+        height: auto;
+        padding: 40px;
+    }
+    
+    .contenedor-botones {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Estilo para pantallas extra grandes (>= 1200px) */
+@media (min-width: 1200px) {
+    .contenedor {
+        max-width: 1140px;
+        flex-direction: row;
+        height: auto;
+        padding: 40px;
+    }
+    
+    .contenedor-botones {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
