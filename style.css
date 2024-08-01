@@ -346,6 +346,8 @@ body.modo-oscuro {
     background-color: #121212;
     color: #e5e5e5;
     background-image: url(fondoOscuro.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 body.modo-oscuro .contenedor {
