@@ -352,7 +352,7 @@ body.modo-oscuro .pie {
     
     .contenedor-botones {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
 }
 
@@ -367,7 +367,7 @@ body.modo-oscuro .pie {
     
     .contenedor-botones {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
 }
 
@@ -382,6 +382,6 @@ body.modo-oscuro .pie {
     
     .contenedor-botones {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
 }
