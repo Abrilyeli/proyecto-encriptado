@@ -90,7 +90,7 @@ body {
     max-width: 600px;
     width: 90%;
     gap: 10px;
-    height: auto;
+    height: 400px;
 }
 .logo {
     position: fixed;
