@@ -83,21 +83,20 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #012e46;
-    padding: 20px;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(128,128,128,0.5);
     text-align: center;
-    max-width: 600px;
-    width: 90%;
-    gap: 10px;
-    height: 450px;
+    max-width: 90%;
+    gap: 1rem;
+    height: auto;
 }
 .logo {
     position: fixed;
-    width: 65px;
+    width: 5vw;
     height: auto;
-    top: 10px;
-    left: 10px;
+    top: 1rem;
+    left: 1rem;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -107,26 +106,25 @@ body {
 
 h1 {
     color: #E5E5E5;
-    margin: 0 0 20px 0;
+    margin: 0 0 1rem 0;
 }
 
 textarea {
     width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 15px;
+    padding: 1rem;
     box-sizing: border-box;
     resize: none;
-    min-height: 60px
+    min-height: 10vh;
 }
 
 button {
-    margin: 10px;
-    padding: 10px 20px;
+    margin: 1rem;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 18px;
+    border-radius: 1.5rem;
     background-color: #808080;
     color: white;
     cursor: pointer;
@@ -135,17 +133,17 @@ button {
 .contenedor-botones {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 15px
+    gap: 1rem;
+    margin-top: 1rem;
     
 }
  
 .btn-limpiar {
     display: none; 
-    margin: 10px;
-    padding: 10px 20px;
+    margin: 1rem;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 18px;
+    border-radius: 1.5rem;
     background-color: #ff0000; 
     color: white;
     cursor: pointer;
@@ -175,15 +173,15 @@ button#compartirTexto:hover {
 .mensaje-copiado {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: #28a745;
     color: white;
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 1.2em;
+    font-size: 1.2rem;
     z-index: 1000;
 }
 
@@ -210,12 +208,12 @@ button#compartirTexto:hover {
 
 
 .pie {
-    margin-top: 20px;
+    margin-top: 2rem;
     background-color: beige;
     color: black;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 1rem 0;
     position: fixed;
     bottom: 0;
 }
@@ -229,14 +227,14 @@ button#compartirTexto:hover {
 
 .icono-ayuda {
     position: fixed;
-    top: 60px;
-    right: 10px;
+    top: 6rem;
+    right: 1rem;
     background-color: #fff;
     border: none;
     border-radius: 50%;
-    padding: 10px;
+    padding: 1rem;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s, color 0.3s;
 }
@@ -248,7 +246,7 @@ button#compartirTexto:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 30vw;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
@@ -260,16 +258,16 @@ button#compartirTexto:hover {
 }
 
 .ventana-contenido {
-    padding: 20px;
+    padding: 2rem;
     text-align: left;
     position: relative;
 }
 
 .cerrar-ventana {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -281,14 +279,14 @@ body.modo-oscuro .ventana-reglas {
 /* Estilos del interruptor de modo oscuro */
 .modo-oscuro-toggle {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 1rem;
+    right: 1rem;
     background-color: #fff;
     border: none;
     border-radius: 50%;
-    padding: 10px;
+    padding: 1rem;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s, color 0.3s;
 }
@@ -347,12 +345,12 @@ body.modo-oscuro .pie {
         max-width: 720px;
         flex-direction: row;
         height: auto;
-        padding: 40px;
+        padding: 4rem;
     }
     
     .contenedor-botones {
         flex-direction: column;
-        gap: 15px;
+        gap: 1rem;
     }
 }
 
@@ -362,12 +360,12 @@ body.modo-oscuro .pie {
         max-width: 960px;
         flex-direction: row;
         height: auto;
-        padding: 40px;
+        padding: 4rem;
     }
     
     .contenedor-botones {
         flex-direction: column;
-        gap: 15px;
+        gap: 1rem;
     }
 }
 
@@ -377,11 +375,11 @@ body.modo-oscuro .pie {
         max-width: 1140px;
         flex-direction: row;
         height: auto;
-        padding: 40px;
+        padding: 4rem;
     }
     
     .contenedor-botones {
         flex-direction: column;
-        gap: 15px;
+        gap: 1rem;
     }
 }
