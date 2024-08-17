@@ -83,20 +83,23 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #012e46;
-    padding: 2rem;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(128,128,128,0.5);
     text-align: center;
-    max-width: 90%;
-    gap: 1rem;
+    max-width: 600px;
+    width: 90%;
+    gap: 10px;
+    height:450px;
+ 
     height: auto;
 }
 .logo {
     position: fixed;
-    width: 5vw;
+    width: 65px;
     height: auto;
-    top: 2rem;
-    left: 2rem;
+    top: 10px;
+    left: 10px;
     transition: transform 0.2s ease-in-out;
 }
 
