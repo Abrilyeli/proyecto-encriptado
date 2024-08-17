@@ -95,8 +95,8 @@ body {
     position: fixed;
     width: 5vw;
     height: auto;
-    top: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
     transition: transform 0.2s ease-in-out;
 }
 
