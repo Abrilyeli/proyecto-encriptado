@@ -120,7 +120,7 @@ textarea {
     padding: 1rem;
     box-sizing: border-box;
     resize: none;
-    min-height: 10vh;
+    min-height: 60px;
 }
 
 button {
@@ -348,7 +348,7 @@ body.modo-oscuro .pie {
         max-width: 720px;
         flex-direction: row;
         height: auto;
-        padding: 4rem;
+        padding: 40px;
     }
     
     .contenedor-botones {
@@ -363,7 +363,7 @@ body.modo-oscuro .pie {
         max-width: 960px;
         flex-direction: row;
         height: auto;
-        padding: 4rem;
+        padding: 40px;
     }
     
     .contenedor-botones {
@@ -378,11 +378,11 @@ body.modo-oscuro .pie {
         max-width: 1140px;
         flex-direction: row;
         height: auto;
-        padding: 4rem;
+        padding: 40px;
     }
     
     .contenedor-botones {
         flex-direction: column;
-        gap: 1rem;
+        gap: 15px;
     }
 }
